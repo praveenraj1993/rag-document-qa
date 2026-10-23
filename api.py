@@ -1,5 +1,8 @@
 import chromadb
+# import ollama
 import ollama
+
+client = ollama.Client(host="http://host.docker.internal:11434")
 from fastapi import FastAPI
 from pydantic import BaseModel
 
@@ -22,7 +25,8 @@ def ask(q: Question):
     keep = [i for i, d in enumerate(results["distances"][0]) if d <= MAX_DISTANCE]
     context = "\n\n".join(results["documents"][0][i] for i in keep)
     sources = [results["metadatas"][0][i]["source"] for i in keep]
-    reply = ollama.chat(
+    # reply = ollama.chat(
+    reply = client.chat(
         model="llama3.2:3b",
         messages=[{"role": "user", "content":
             f"Use ONLY the context below. Do not use any outside knowledge. If the answer is not in the context, say you don't know.\n\nContext:\n{context}\n\nQuestion: {q.question}"}],
