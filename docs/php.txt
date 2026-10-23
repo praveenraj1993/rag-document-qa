@@ -1,0 +1,1 @@
+PHP is a server-side scripting language used mainly for building websites and web applications. It was created by Rasmus Lerdorf in 1994. PHP code runs on the web server and sends HTML to the browser. It works well with databases such as MySQL. Laravel is a popular PHP framework that gives developers routing, authentication, and an easy way to build REST APIs.

@@ -1,1 +1,11 @@
-React is a JavaScript library for building user interfaces.
+React is a JavaScript library for building user interfaces. It was created at Facebook and released in 2013. React lets developers build a page out of small reusable pieces called components. Each component describes what part of the screen should look like, and React updates the page when the data changes.
+
+A component is usually a JavaScript function that returns markup written in JSX. JSX looks like HTML but is written inside JavaScript. Components receive data from their parent through props. Props are read-only, so a component should never change its own props. Components keep their own changing data in state.
+
+State is managed with hooks. The useState hook stores a value and gives a function to update it. When the state changes, React runs the component again and updates the screen. The useEffect hook runs code after the component renders, and it is used for tasks such as fetching data from an API or setting up a timer. Other hooks include useRef, useContext, and useMemo.
+
+React uses a virtual DOM. It keeps a lightweight copy of the page in memory, compares it with the new version after a change, and updates only the parts of the real page that are different. This makes updates efficient. Lists of items need a unique key on each item so React can track them correctly.
+
+Data from a backend is usually loaded with the fetch function or a library such as axios. A React app sends a request to an API endpoint, receives JSON, stores it in state, and shows it on the page. Forms in React are often controlled, which means the input value is stored in state and updated on every change.
+
+Next.js is a framework built on top of React. It adds routing, server-side rendering, and tools for building full websites. Testing React code is commonly done with Jest and React Testing Library, and end-to-end tests are done with Playwright. React is widely used for single-page applications and dashboards.

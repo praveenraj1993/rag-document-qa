@@ -1,1 +1,11 @@
-Python is a programming language used for web, data, and AI.
+Python is a high-level programming language known for its clear and readable syntax. It was created by Guido van Rossum and first released in 1991. Python uses indentation to mark blocks of code, which makes programs easy to read. It is used for web development, data analysis, automation, scientific computing, and artificial intelligence.
+
+Python has built-in data types such as integers, floats, strings, lists, tuples, dictionaries, and sets. A list is an ordered collection that can be changed. A tuple is an ordered collection that cannot be changed. A dictionary stores key and value pairs, and a set stores unique values. Functions are defined with the def keyword, and classes are defined with the class keyword.
+
+Python has a large standard library and a huge number of third-party packages. Packages are installed with pip, the Python package installer. A virtual environment keeps the packages for one project separate from other projects. It is created with the venv module and activated before installing packages. A file called requirements.txt lists the packages a project needs so that others can install the same versions.
+
+Popular Python libraries include NumPy and pandas for data work, scikit-learn for machine learning, and Flask, Django, and FastAPI for web applications. FastAPI is a modern framework for building APIs. It uses Python type hints to validate input data and automatically creates interactive documentation at the docs page. It supports asynchronous code, which helps handle many requests at the same time.
+
+Testing in Python is commonly done with pytest. A test is a small function that checks that code behaves as expected. Tests can use fake objects, called mocks, to replace slow or paid services such as external APIs. Good tests run quickly and give the same result every time.
+
+Python is also widely used in artificial intelligence. Developers use it to call large language models, build retrieval systems, create embeddings, and work with vector databases such as ChromaDB. Its simple syntax and rich ecosystem make it a common first choice for AI projects.

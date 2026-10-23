@@ -4,7 +4,7 @@ import chromadb
 client = chromadb.PersistentClient(path="db")
 collection = client.get_or_create_collection("docs")
 
-def chunk(text, size=500):
+def chunk(text, size=80):
     words = text.split()
     return [" ".join(words[i:i+size]) for i in range(0, len(words), size)]
 
